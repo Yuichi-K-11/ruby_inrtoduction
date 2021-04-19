@@ -1,4 +1,4 @@
-country = 'japan'
+country = 'us'
 
 greeting =
   if country == 'japan'
@@ -7,9 +7,23 @@ greeting =
     'ciao'
   elsif country == 'us'
     'hello'
+  else
+    'nil'
   end
 
 puts greeting
+
+case country
+when 'japan', '日本'
+  'こんにちは'
+when 'italy', 'イタリア'
+  'ciao'
+when 'us', 'アメリカ'
+  'hello'
+end
+
+puts greeting
+
 
 point = 7
 day = 1
